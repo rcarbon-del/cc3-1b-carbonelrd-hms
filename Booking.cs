@@ -22,10 +22,10 @@ namespace cc3_1b_carbonelrd_hms
         {
             room.IsOccupied = true;
             Room = room;
-            Price = room.Price;
+            Duration = checkout.Subtract(checkin).Days;
+            Price = room.Price * Duration;
             CheckIn = checkin;
             CheckOut = checkout;
-            Duration = checkout.Subtract(checkin).Days;
             ReservationNumber = _reservationNumberSeed++;
         }
     }
