@@ -45,6 +45,7 @@ namespace cc3_1b_carbonelrd_hms
 
             terry.DisplayBookings();
             hms.DisplayBookingDetails(1234567890);
+            Console.WriteLine(terry.TotalRoomCount);
         }
     }
 }

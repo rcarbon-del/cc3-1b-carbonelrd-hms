@@ -14,6 +14,7 @@ namespace cc3_1b_carbonelrd_hms
         }
         public void BookReservation(Guest guest, Booking booking)
         {
+            guest.TotalRoomCount++;
             guest.Booking.Add(booking);
         }
     }
